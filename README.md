@@ -64,3 +64,6 @@ var train_data = new yfann.YNodeFANNTrainData( );
  
  pumadyn();
  </pre>
+ 
+ Tips:
+    When you running test.js, don't forget copy the fann libraries into the directory where test.js lies in.
