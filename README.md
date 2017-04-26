@@ -7,7 +7,7 @@ Directories:
    src -- source files of FANN and fann-node addon \
    tmp -- Makefile \
   node -- head files of Node.js (version 4.3.0) \
-   lib -- library \
+   lib -- libraries of FANN and Node.js
 
 Compile
  
