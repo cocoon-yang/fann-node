@@ -56,12 +56,10 @@ var train_data = new yfann.YNodeFANNTrainData( );
  	var testdata = [0.485265,0.496498,0.503016,0.490695,0.485165,0.489131,0.505908,0.506213,0.502395,0.505477,0.499453,0.504030,0.830962,0.629794,0.883773,0.588814,0.400239,0.523277,0.515112,0.520103,0.518687,0.524354,0.512448,0.517644,0.515489,0.515527,0.512288,0.511747,0.514934,0.517329,0.513065,0.517594]
  	
  	// var result = fann.test( testdata, Array([0.416431]) );
- 	var result = fann.run( testdata  );
- 	
+ 	var result = fann.run( testdata  ); 	
 	console.log( 'result:', result  );
-		
-    fann.test_data( test_data);
- 
+	
+	fann.test_data( test_data); 
  }
  
  pumadyn();
