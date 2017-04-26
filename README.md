@@ -10,7 +10,8 @@ Node.js interface of Fast Artificial Neural Network Library (FANN) 2.2.0 on Wind
 
 Compile
 --
-    open developer command prompt for VS  
+ open developer command prompt for VS   
+    
 <pre>
 tmp> nmake  
 </pre>
