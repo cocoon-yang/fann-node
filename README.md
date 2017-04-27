@@ -16,7 +16,7 @@ Compile
 tmp> nmake  
 </pre>
 
-## Example:  
+## Examples:  
 <pre> 
 // 
 // Global variables
@@ -64,10 +64,7 @@ var train_data = new yfann.YNodeFANNTrainData( );
  
  pumadyn();
  </pre>
- 
- Tips:
-    When you running test.js, don't forget copy the fann libraries into the directory where test.js lies in.
-    
+
 <pre>   
 //
 // module
@@ -103,3 +100,7 @@ console.log("xor test (1,0) -> ", fann.run([1, 0]));
 console.log("xor test (0,1) -> ", fann.run([0, 1]));
 console.log("xor test (1,1) -> ", fann.run([1, 1]));
 </pre>    
+ 
+ Tips:
+      When you running test.js, don't forget copy the fann libraries into the directory where test.js lies in.
+    
