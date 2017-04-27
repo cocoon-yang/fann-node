@@ -67,3 +67,39 @@ var train_data = new yfann.YNodeFANNTrainData( );
  
  Tips:
     When you running test.js, don't forget copy the fann libraries into the directory where test.js lies in.
+    
+<pre>   
+//
+// module
+var yfann = require('./build/release/fann')
+
+
+//
+// network parameters
+//
+var fann = new yfann.YNodeFANN( );
+var test_data = new yfann.YNodeFANNTrainData( );
+var train_data = new yfann.YNodeFANNTrainData( );
+
+fann.create_standard_array( 3, [2, 5, 1]  );
+
+
+var data = [
+    [[0, 0], [0]],
+    [[0, 1], [1]],
+    [[1, 0], [1]],
+    [[1, 1], [0]],
+    [[0, 0], [0]],
+    [[0, 1], [1]],
+    [[0, 0], [0]],
+];
+
+ 
+train_data.set_train_data( data );
+fann.train_on_data( train_data, 10, 3, 0.01  );
+ 
+console.log("xor test (0,0) -> ", fann.run([0, 0]));
+console.log("xor test (1,0) -> ", fann.run([1, 0]));
+console.log("xor test (0,1) -> ", fann.run([0, 1]));
+console.log("xor test (1,1) -> ", fann.run([1, 1]));
+</pre>    
