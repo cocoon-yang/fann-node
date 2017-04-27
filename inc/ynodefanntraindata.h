@@ -24,6 +24,7 @@ private:
 	static void New(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static v8::Persistent<v8::Function> constructor;
 
+	static void set_train_data(const v8::FunctionCallbackInfo<v8::Value>& args);
 	static void read_train_from_file(const v8::FunctionCallbackInfo<v8::Value>& args);
 
 	static void length_train_data(const v8::FunctionCallbackInfo<v8::Value>& args);
