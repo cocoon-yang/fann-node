@@ -186,3 +186,5 @@ While training the ANN you could slightly increase the steepness parameter of th
 [How to choose number of hidden layers](http://stackoverflow.com/questions/9436209/how-to-choose-number-of-hidden-layers-and-nodes-in-neural-network)  
 
 [Criteria for choosing number of hidden layers ](http://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde)
+
+[ann step by step](https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/)
