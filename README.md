@@ -175,3 +175,14 @@ The number of hidden layers is also important.  Generally speaking, if the probl
 The threshold activation function is faster than the sigmoid function, but since it is not possible to train with this function, you may wish to consider an alternate approach.
 
 While training the ANN you could slightly increase the steepness parameter of the sigmoid function.  This would make the sigmoid function more steep and make it look more like the threshold function.  After this training session you could set the activation function to the threshold function and the ANN would work with this activation function.  This approach will not work on all kinds of problems, but has been successfully tested on the XOR function.
+
+
+## Valuable References 
+
+[A Basic Introduction to Feedforward Backpropagation Neural Networks](http://www.webpages.ttu.edu/dleverin/neural_network/neural_networks.html)
+
+[Role of Bias in Neural Networks](http://stackoverflow.com/questions/2480650/role-of-bias-in-neural-networks)
+
+[How to choose number of hidden layers](http://stackoverflow.com/questions/9436209/how-to-choose-number-of-hidden-layers-and-nodes-in-neural-network)  
+
+[Criteria for choosing number of hidden layers ](http://stackoverflow.com/questions/10565868/multi-layer-perceptron-mlp-architecture-criteria-for-choosing-number-of-hidde)
