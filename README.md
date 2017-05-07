@@ -162,22 +162,24 @@ The initial weights are random values between -0.1 and 0.1. Thimm and Fiesler st
 
 ### Activation Function  
 
-The standard activation function is the sigmoid activation function, the steepness parameter used in the activation function can be adjusted.
+The standard activation function is the sigmoid activation function, the steepness parameter used in the activation function can be adjusted[1].
 
 ### Layers, Neurons and Connections
 
-If the network become too large, the ANN will have difficulties learning and when it does learn it will tend to over-fit resulting in poor generalization.  If the network becomes too small, it will not be able to represent the rules needed to learn the problem and it will never gain a sufficiently low error rate.
+"If the network become too large, the ANN will have difficulties learning and when it does learn it will tend to over-fit resulting in poor generalization.  If the network becomes too small, it will not be able to represent the rules needed to learn the problem and it will never gain a sufficiently low error rate."[1]
 
-The number of hidden layers is also important.  Generally speaking, if the problem is simple it is often enough to have one or two hidden layers, but as the problems get more complex, so does the need for more layers.
+"The number of hidden layers is also important.  Generally speaking, if the problem is simple it is often enough to have one or two hidden layers, but as the problems get more complex, so does the need for more layers."[1]
 
 ### Adjusting Parameters During Training
 
-The threshold activation function is faster than the sigmoid function, but since it is not possible to train with this function, you may wish to consider an alternate approach.
+"The threshold activation function is faster than the sigmoid function, but since it is not possible to train with this function, you may wish to consider an alternate approach."[1]
 
-While training the ANN you could slightly increase the steepness parameter of the sigmoid function.  This would make the sigmoid function more steep and make it look more like the threshold function.  After this training session you could set the activation function to the threshold function and the ANN would work with this activation function.  This approach will not work on all kinds of problems, but has been successfully tested on the XOR function.
+"While training the ANN you could slightly increase the steepness parameter of the sigmoid function.  This would make the sigmoid function more steep and make it look more like the threshold function.  After this training session you could set the activation function to the threshold function and the ANN would work with this activation function.  This approach will not work on all kinds of problems, but has been successfully tested on the XOR function."[1]
 
 
 ## Valuable References 
+
+[1](http://leenissen.dk/fann/wp/help/advanced-usage/) http://leenissen.dk/fann/wp/help/advanced-usage/
 
 [A Basic Introduction to Feedforward Backpropagation Neural Networks](http://www.webpages.ttu.edu/dleverin/neural_network/neural_networks.html)
 
