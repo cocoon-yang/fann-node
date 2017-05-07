@@ -154,7 +154,7 @@ save | fann_save | Save the entire network to a configuration file.
 
 "The training algorithm is one of the most important parameters. 
 The training algorithms have several different parameters which can be set. the most important parameter is the learning rate, but unfortunately this is also a parameter which is hard to find a reasonable default for.
- I (SN) have several times ended up using 0.7, but it is a good idea to test several different learning rates when training a network.  It is also worth noting that the activation function has a profound effect on the optimal learning rate"
+ I (SN) have several times ended up using 0.7, but it is a good idea to test several different learning rates when training a network.  It is also worth noting that the activation function has a profound effect on the optimal learning rate"[1]
 
 ### Weights
 
