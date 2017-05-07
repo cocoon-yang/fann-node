@@ -144,3 +144,34 @@ fann-node  | FANN   | Method Description
 ---------- | -------|-------------------
 create_from_file | fann_create_from_file | Constructs a backpropagation neural network from a configuration file, which has been saved by fann_save.
 save | fann_save | Save the entire network to a configuration file.
+
+
+
+## [FANN Parameters](http://leenissen.dk/fann/wp/help/advanced-usage/)
+
+
+### Training Algorithm
+
+"The training algorithm is one of the most important parameters. 
+The training algorithms have several different parameters which can be set. the most important parameter is the learning rate, but unfortunately this is also a parameter which is hard to find a reasonable default for.
+ I (SN) have several times ended up using 0.7, but it is a good idea to test several different learning rates when training a network.  It is also worth noting that the activation function has a profound effect on the optimal learning rate"
+
+### Weights
+
+The initial weights are random values between -0.1 and 0.1. Thimm and Fiesler state that, “An (sic) fixed weight variance of 0.2, which corresponds to a weight range of [-0.77, 0.77], gave the best mean performance for all the applications tested in this study.  This performance is similar or better as compared to those of the other weight initialization methods.”
+
+### Activation Function  
+
+The standard activation function is the sigmoid activation function, the steepness parameter used in the activation function can be adjusted.
+
+### Layers, Neurons and Connections
+
+If the network become too large, the ANN will have difficulties learning and when it does learn it will tend to over-fit resulting in poor generalization.  If the network becomes too small, it will not be able to represent the rules needed to learn the problem and it will never gain a sufficiently low error rate.
+
+The number of hidden layers is also important.  Generally speaking, if the problem is simple it is often enough to have one or two hidden layers, but as the problems get more complex, so does the need for more layers.
+
+### Adjusting Parameters During Training
+
+The threshold activation function is faster than the sigmoid function, but since it is not possible to train with this function, you may wish to consider an alternate approach.
+
+While training the ANN you could slightly increase the steepness parameter of the sigmoid function.  This would make the sigmoid function more steep and make it look more like the threshold function.  After this training session you could set the activation function to the threshold function and the ANN would work with this activation function.  This approach will not work on all kinds of problems, but has been successfully tested on the XOR function.
